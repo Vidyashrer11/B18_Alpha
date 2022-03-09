@@ -15,14 +15,13 @@ import { MatCardModule } from "@angular/material/card";
 import {  MatDividerModule } from "@angular/material/divider";
 import { MatAutocompleteModule } from "@angular/material/autocomplete";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PriceFilterComponent } from './components/price-filter/price-filter.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CategoriesComponent,
-          PriceFilterComponent,
+          
   ],
   imports: [
     BrowserModule,
