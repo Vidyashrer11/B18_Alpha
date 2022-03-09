@@ -1,0 +1,76 @@
+div {
+    margin-top:3px;
+    margin-left:10px;
+    
+}
+// .card img{
+//     transition:0.2s ease-in-out;
+//     transform: scale(1);
+    
+
+.card{
+    padding:6px;
+    
+    
+}
+div.box{
+width:300px;
+height:400px;
+}
+div.dis {
+    display: inline-flex;
+    position: relative;
+}
+.color:hover{
+  background-color:orangered;
+  box-shadow:rgb(201, 192, 192) ;
+}
+// .price-box{
+    
+//     box-shadow: 0 1px 1px rgb(0 0 0 / 24%), 0 0 2px rgb(0 0 0 / 12%);
+//     margin: 1em;
+//     margin-top:3px;
+//     border-radius: 4px;
+//     flex: 1 1 auto;
+//     display: flex;
+//     justify-content: space-between;
+//     align-content: center;
+//     align-items: center;
+//     justify-content: center;
+//     padding: 8px 20px;
+// }
+mat-slider {
+    width: 230px;
+  }
+
+  mat-card {
+    background-color: white;
+    margin-top: 15px;
+    
+  }
+  .margin {
+      margin-bottom: 15px;
+      background-color:#ff4081;
+      box-sizing: content-box;
+  }
+
+  span {
+      font-size: 20px;
+  }
+  .scheme:hover{
+      background-color:rgb(207, 216, 216);
+  }
+  img{
+    height: 250px ;
+    width:150px;
+}
+.scheme{
+    width: 165px;
+}
+.price-box-header{
+    padding-left: 0;
+    padding-right: 0;
+    padding-top:0;
+    margin-right: -34px;
+    margin-left: 8px;
+}

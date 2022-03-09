@@ -1,0 +1,86 @@
+<div class="dis">
+<div  class="container box">
+    <div class="box">
+        <div  class=" color card ">
+          <a    (click)="filter('')">
+               <h2 class="color">All categories</h2> 
+
+          </a>
+        </div>
+        <div class=" color card">
+            <a (click)="filter('Biography')">
+                <h2>Biography</h2>
+                
+            </a>
+        </div>
+        <div class="color card">
+            <a (click)="filter('Fiction')">
+                <h2>Fiction</h2>
+            </a>
+        </div>
+        <div  class="color card">
+            <a (click)="filter('Mystery')">
+                <h2>Mistery</h2>
+            </a>
+        </div>
+        <div class="color card">
+            <a (click)="filter('Fantasy')">
+                <h2>Fantasy</h2>
+            </a>
+        </div>
+        <div class="color card col mb-3">
+            <a (click)="filter('Romance')">
+                <h2>Romance</h2>
+            </a>
+        </div>
+    </div>
+
+<div class="box-header">
+    <mat-card class="price-box-header" >
+        <mat-card  class="margin price-box">
+            <div >
+            <mat-card-title ><span style="background-color:#ff4081;width:100%">Price Filter</span></mat-card-title>
+        </div>
+        </mat-card>
+        
+        <mat-slider
+        (click)="filter1()"
+      [(ngModel)]="rate"
+      thumbLabel
+      [displayWith]="formatLabel"
+      tickInterval="1000"
+      step="100"
+      min="111"
+      max="55555"
+      aria-label="units"></mat-slider><br>
+        <span>₹111.00</span>
+        <span style="margin-left:50px">to</span>
+      <span style="float: right;">{{ rate | currency: "INR":"symbol" }}</span>
+    </mat-card>
+</div>
+</div>
+<div class="page layout">
+    <div  class="row">
+        <ng-container  *ngFor="let item of filterCategory ">
+        <div  class="scheme card col-md-2">
+            <img   src="https://bookcart.azurewebsites.net/Upload/{{item.coverFileName}}" alt=" ">
+            <h5 style="
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100ch;
+          ">{{item.title}}</h5>
+            <p><strong>{{ item.price | currency: "INR":"symbol" }}</strong></p>
+            <button class="btn btn-primary">Add To cart</button>
+        </div>
+      </ng-container>
+    </div>
+    <div style="text-align:center;
+    font-size: 41px;
+    font-style: italic;margin-top:100px;margin-left:200px" *ngIf="filterCategory.length==0">No books Found</div>
+</div>
+</div>
+
+
+ 
+ 
