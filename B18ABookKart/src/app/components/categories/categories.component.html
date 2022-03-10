@@ -1,39 +1,54 @@
 <div class="dis">
-<div  class="container box">
-    <div class="box">
+ <div  class="container box">
+     
+    <div class="model">
         <div  class=" color card ">
-          <a    (click)="filter('')">
-               <h2 class="color">All categories</h2> 
+          <a  styel="padding: 10px;"  (click)="filter('')">
+            <span *ngFor="let pro of categoryListArray">
+                {{pro.category0}}</span> 
 
           </a>
         </div>
         <div class=" color card">
-            <a (click)="filter('Biography')">
-                <h2>Biography</h2>
-                
-            </a>
+            
+            <a (click)="filter('Biography')"> 
+                <span *ngFor="let pro of categoryListArray">
+                    {{pro.category1}}</span>
+             </a> 
         </div>
+        
         <div class="color card">
             <a (click)="filter('Fiction')">
-                <h2>Fiction</h2>
+                <span *ngFor="let pro of categoryListArray">
+                    {{pro.category2}}</span>
             </a>
         </div>
         <div  class="color card">
             <a (click)="filter('Mystery')">
-                <h2>Mistery</h2>
+                <span *ngFor="let pro of categoryListArray">
+                    {{pro.category3}}</span>
             </a>
         </div>
         <div class="color card">
             <a (click)="filter('Fantasy')">
-                <h2>Fantasy</h2>
+                <span *ngFor="let pro of categoryListArray">
+                    {{pro.category4}}</span>
             </a>
         </div>
         <div class="color card col mb-3">
             <a (click)="filter('Romance')">
-                <h2>Romance</h2>
+                <span *ngFor="let pro of categoryListArray">
+                    {{pro.category5}}</span>
             </a>
         </div>
-    </div>
+        
+    
+</div>
+
+
+
+
+
 
 <div class="box-header">
     <mat-card class="price-box-header" >
@@ -54,7 +69,7 @@
       max="55555"
       aria-label="units"></mat-slider><br>
         <span>₹111.00</span>
-        <span style="margin-left:50px">to</span>
+        <span style="margin-left:24px">to</span>
       <span style="float: right;">{{ rate | currency: "INR":"symbol" }}</span>
     </mat-card>
 </div>

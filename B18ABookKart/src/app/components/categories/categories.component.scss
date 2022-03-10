@@ -9,7 +9,7 @@ div {
     
 
 .card{
-    padding:6px;
+    padding:11px;
     
     
 }
@@ -24,6 +24,9 @@ div.dis {
 .color:hover{
   background-color:orangered;
   box-shadow:rgb(201, 192, 192) ;
+}
+.color{
+    background-color: rgb(113, 153, 140);
 }
 // .price-box{
     
@@ -73,4 +76,13 @@ mat-slider {
     padding-top:0;
     margin-right: -34px;
     margin-left: 8px;
+}
+
+.model{
+    width: 274px;
+    padding: 1px;
+    margin-top: 3.5ytu6tytpx;
+}
+.card.a{
+    padding: 10px;
 }
