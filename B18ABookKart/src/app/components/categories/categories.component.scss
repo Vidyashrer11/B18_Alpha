@@ -1,17 +1,9 @@
 div {
     margin-top:3px;
-    margin-left:10px;
-    
+    margin-left:10px;   
 }
-// .card img{
-//     transition:0.2s ease-in-out;
-//     transform: scale(1);
-    
-
 .card{
-    padding:11px;
-    
-    
+    padding:11px;  
 }
 div.box{
 width:300px;
@@ -28,35 +20,18 @@ div.dis {
 .color{
     background-color: rgb(113, 153, 140);
 }
-// .price-box{
-    
-//     box-shadow: 0 1px 1px rgb(0 0 0 / 24%), 0 0 2px rgb(0 0 0 / 12%);
-//     margin: 1em;
-//     margin-top:3px;
-//     border-radius: 4px;
-//     flex: 1 1 auto;
-//     display: flex;
-//     justify-content: space-between;
-//     align-content: center;
-//     align-items: center;
-//     justify-content: center;
-//     padding: 8px 20px;
-// }
 mat-slider {
     width: 230px;
   }
-
   mat-card {
     background-color: white;
-    margin-top: 15px;
-    
+    margin-top: 15px; 
   }
   .margin {
       margin-bottom: 15px;
       background-color:#ff4081;
       box-sizing: content-box;
   }
-
   span {
       font-size: 20px;
   }
@@ -77,7 +52,6 @@ mat-slider {
     margin-right: -34px;
     margin-left: 8px;
 }
-
 .model{
     width: 274px;
     padding: 1px;
@@ -85,4 +59,13 @@ mat-slider {
 }
 .card.a{
     padding: 10px;
+}
+div a{
+  padding: 3px;
+}
+mat-slider span{
+    float: right;
+}
+span.for{
+    margin-left:24px;
 }

@@ -1,55 +1,12 @@
 <div class="dis">
- <div  class="container box">
-     
+ <div  class="container box"> 
     <div class="model">
-        <div  class=" color card ">
-          <a  styel="padding: 10px;"  (click)="filter('')">
-            <span *ngFor="let pro of categoryListArray">
-                {{pro.category0}}</span> 
-
+        <div  class=" color card " *ngFor="let pro of categoryListArray">
+          <a (click)="filter(pro)">
+            <span>{{pro}}</span> 
           </a>
-        </div>
-        <div class=" color card">
-            
-            <a (click)="filter('Biography')"> 
-                <span *ngFor="let pro of categoryListArray">
-                    {{pro.category1}}</span>
-             </a> 
-        </div>
-        
-        <div class="color card">
-            <a (click)="filter('Fiction')">
-                <span *ngFor="let pro of categoryListArray">
-                    {{pro.category2}}</span>
-            </a>
-        </div>
-        <div  class="color card">
-            <a (click)="filter('Mystery')">
-                <span *ngFor="let pro of categoryListArray">
-                    {{pro.category3}}</span>
-            </a>
-        </div>
-        <div class="color card">
-            <a (click)="filter('Fantasy')">
-                <span *ngFor="let pro of categoryListArray">
-                    {{pro.category4}}</span>
-            </a>
-        </div>
-        <div class="color card col mb-3">
-            <a (click)="filter('Romance')">
-                <span *ngFor="let pro of categoryListArray">
-                    {{pro.category5}}</span>
-            </a>
-        </div>
-        
-    
+        </div>  
 </div>
-
-
-
-
-
-
 <div class="box-header">
     <mat-card class="price-box-header" >
         <mat-card  class="margin price-box">
@@ -57,20 +14,20 @@
             <mat-card-title ><span style="background-color:#ff4081;width:100%">Price Filter</span></mat-card-title>
         </div>
         </mat-card>
-        
         <mat-slider
         (click)="filter1()"
       [(ngModel)]="rate"
       thumbLabel
       [displayWith]="formatLabel"
-      tickInterval="1000"
-      step="100"
-      min="111"
-      max="55555"
-      aria-label="units"></mat-slider><br>
-        <span>₹111.00</span>
-        <span style="margin-left:24px">to</span>
-      <span style="float: right;">{{ rate | currency: "INR":"symbol" }}</span>
+      [tickInterval]=tick
+      [step]=step
+      [min]=priceMin
+      [max]=priceMaximun
+      aria-label="units">
+    </mat-slider><br>
+        <span>{{priceMin | currency: "INR":"symbol"}}</span>
+        <span class="for">to</span>
+      <span >{{ rate | currency: "INR":"symbol" }}</span>
     </mat-card>
 </div>
 </div>

@@ -8,8 +8,6 @@ import { map } from 'rxjs/operators';
 })
 export class ApiService {
   public filter = new BehaviorSubject<any>([""]);
-  public price = new BehaviorSubject<any>([""]);
-  public rate = new BehaviorSubject<any>([""]);
   constructor(private http : HttpClient) { }
 
   getList(){
